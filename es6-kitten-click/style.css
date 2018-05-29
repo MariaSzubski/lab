@@ -1,0 +1,10 @@
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+section{
+  flex: 1;
+}
+section img:hover{
+  cursor: pointer;
+}

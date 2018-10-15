@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
+html, body{
+  font-family: Nunito;
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body *{
+  box-sizing: inherit;
+}
+
+#content article{
+  position: relative;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #5AAFD4;
+  min-width: 12rem;
+  max-width: 19rem;
+  width: auto;
+  @media (max-width: 680px) {
+    max-width: 100%;
+  }
+  overflow: hidden;
+
+  div{
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  small{
+    text-transform: uppercase;
+    font-size: 50%;
+    font-weight: 700;
+  }
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h4{
+    text-align: right;
+  }
+
+  s{
+    color: #999;
+  }
+
+  p{
+    font-size: 80%;
+  }
+}
+
+.sale h4{
+  color: #E34399;
+}
+
+#filters{
+  @media (max-width: 767px){
+    #filters-desktop{ display: none; }
+    #filters-mobile{ display: block; }
+  }
+  @media (min-width: 768px){
+    #filters-desktop{ display: block; }
+    #filters-mobile{ display: none; }
+  }
+}

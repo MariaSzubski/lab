@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Masonry Filters - Maria Szubski Digital, LLC</title>
+    <link rel="stylesheet" href="style/lab.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="filters.js"></script>
+  </head>
+  <body>
+    <sub>Maria Szubski Digital, LLC Lab</sub>
+    <h1>Metafizzy Isotope Sort</h1>
+    <p>Online resturant menu. Built using Metafizzy's Isotope sorting with Masrony layout. Filters change format on mobile and desktop.</p>
+    <section id="filters">
+      <div id="filters-desktop" tabindex="-1">
+
+        <h2>Cuisine</h2>
+
+        <!-- Meat -->
+        <button data-filter=".meat">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Meat</span>
+        </button>
+
+        <!-- Vegetarian -->
+        <button data-filter=".vegetarian">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Vegetarian</span>
+        </button>
+
+        <!-- Seafood -->
+        <button data-filter=".seafood">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Seafood</span>
+        </button>
+
+        <!-- Fruit -->
+        <button data-filter=".fruit">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Fruit</span>
+        </button>
+
+        <!-- Pizza -->
+        <button data-filter=".pizza">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Pizza</span>
+        </button>
+
+        <h2>Meal</h2>
+
+        <!-- Breakfast -->
+        <button data-filter=".breakfast">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Breakfast</span>
+        </button>
+
+        <!-- Appetizer -->
+        <button data-filter=".appetizer">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Appetizer</span>
+        </button>
+
+        <!-- Soup -->
+        <button data-filter=".soup">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Soup</span>
+        </button>
+
+        <!-- Salad -->
+        <button data-filter=".salad">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Salad</span>
+        </button>
+
+        <!-- Entree -->
+        <button data-filter=".entree">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Entree</span>
+        </button>
+
+        <!-- Dessert -->
+        <button data-filter=".dessert">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Dessert</span>
+        </button>
+
+        <!-- Mixed Drink -->
+        <button data-filter=".drink">
+          <div tabindex="-1">
+            <!-- Icon -->
+          </div>
+          <span tabindex="-1">Mixed Drink</span>
+        </button>
+
+      </div>
+
+      <div id="filters-mobile">
+        <select multiple>
+          <optgroup label="Cuisine">
+            <option value=".meat">Meat</option>
+            <option value=".vegetarian">Vegetarian</option>
+            <option value=".sseafood">Seafood</option>
+            <option value=".fruit">Fruit</option>
+            <option value=".pizza">Pizza</option>
+          </optgroup>
+          <optgroup label="Meal">
+            <option value=".breakfast">Breakfast</option>
+            <option value=".appetizer">Appetizer</option>
+            <option value=".soup">Soup</option>
+            <option value=".salad">Salad</option>
+            <option value=".entree">Entree</option>
+            <option value=".dessert">Dessert</option>
+            <option value=".drink">Mixed Drink</option>
+          </optgroup>
+        </select>
+      </div>
+
+    </section>
+
+    <!--                                        TILES -->
+    <section id="content">
+      <article class="item meat appetizer">
+        <img src="img/lab_masonry_01.jpg">
+        <div>
+          <small>Pack of 6</small>
+          <hgroup>
+            <h3 class="name">Potstickers</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item fruit drink">
+        <img src="img/lab_masonry_02.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Lime Mixed Drink</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item fruit dessert">
+        <img src="img/lab_masonry_03.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Cranberry Shortcake</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item seafood entree">
+        <img src="img/lab_masonry_04.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Salmon</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item meat entree">
+        <img src="img/lab_masonry_05.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Beef Tacos</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item seafood appetizer">
+        <img src="img/lab_masonry_06.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Shrimp Scampi</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item fruit dessert">
+        <img src="img/lab_masonry_07.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Raspberry Popsicles</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item salad vegetarian">
+        <img src="img/lab_masonry_08.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Kale Salad</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item entree vegetarian">
+        <img src="img/lab_masonry_09.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Mushroom Pasta</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item vegtarian">
+        <img src="img/lab_masonry_10.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Vegan Medley</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item vegtarian salad">
+        <img src="img/lab_masonry_11.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Cranberry Salad</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item seafood soup">
+        <img src="img/lab_masonry_12.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Seafood Stew</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item vegetarian salad">
+        <img src="img/lab_masonry_13.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Veggie Burger</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item meat appetizer">
+        <img src="img/lab_masonry_14.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Swedish Meatballs</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item pizza vegetarian">
+        <img src="img/lab_masonry_15.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Veggie Supreme Pizza</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item dessert">
+        <img src="img/lab_masonry_16.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Oatmeal Snickerdoodles</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item dessert">
+        <img src="img/lab_masonry_17.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Glazed Doughnuts</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item soup meat entree">
+        <img src="img/lab_masonry_18.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Beef Ramen</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item meat entree">
+        <img src="img/lab_masonry_19.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Spaghetti &amp; Meatballs</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item breakfast">
+        <img src="img/lab_masonry_20.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Pumpkin Pancakes</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item fruit dessert">
+        <img src="img/lab_masonry_21.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Fruity Frozen Yogurt</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item pizza appetizer">
+        <img src="img/lab_masonry_22.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Bruschetta</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item soup entree">
+        <img src="img/lab_masonry_23.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Ramen</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item drink fruit">
+        <img src="img/lab_masonry_24.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Cirtus Lemonade</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item appetizer vegetarian">
+        <img src="img/lab_masonry_25.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Avocado Toast</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item breakfast">
+        <img src="img/lab_masonry_26.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Walnut Toast</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item breakfast fruit">
+        <img src="img/lab_masonry_27.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Blueberry Pancakes</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item soup entree">
+        <img src="img/lab_masonry_28.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Butternut Squash Soup</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item fruit dessert">
+        <img src="img/lab_masonry_29.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Blackberry Popsicle</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item fruit dessert">
+        <img src="img/lab_masonry_30.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Orange Vodka Soda</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item drink">
+        <img src="img/lab_masonry_31.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Power Green Smoothie</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item drink fruit">
+        <img src="img/lab_masonry_32.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Watermelon Daiquiri</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item pizza vegetarian">
+        <img src="img/lab_masonry_33.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Carbon Vegan Pizza</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item vegetarian appetizer">
+        <img src="img/lab_masonry_34.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Roasted Mushrooms</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item dessert">
+        <img src="img/lab_masonry_35.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Peanut Butter Pudding</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item dessert">
+        <img src="img/lab_masonry_36.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Lava Cake</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item breakfast">
+        <img src="img/lab_masonry_37.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Cinnamon Waffles</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item salad seafood">
+        <img src="img/lab_masonry_38.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Shrimp Salad</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item pizza meat">
+        <img src="img/lab_masonry_39.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Pepperoni Pizza</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+
+      <article class="item salad">
+        <img src="img/lab_masonry_40.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Spring Salad</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+<!-- Name -->
+      <article class="item salad">
+        <img src="img/lab_masonry_41.jpg">
+        <div>
+          <hgroup>
+            <h3 class="name">Spring Salad</h3>
+            <h4 class="price"><s>$49.99</s> $38.99</h4>
+          </hgroup>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer>
+      Image Credit
+    </footer>
+  </body>
+</html>

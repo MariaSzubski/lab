@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Jolly+Lodger");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css");
+html {
+  font-size: 62.5%;
+  /* 10px = 1rem */
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem; }
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0rem;
+  padding: 0rem;
+  background: #272533; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: Nunito;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+
+header {
+  color: #F5F6FF;
+  text-align: center;
+  padding: 2rem; }
+  header h1 {
+    font-family: 'Jolly Lodger';
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    color: #F59651;
+    margin: 0rem; }
+  header h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: #54506e; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.container {
+  width: 40rem;
+  height: 40rem;
+  padding: 1rem; }
+
+a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #6b658c;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-3rem); } }
+@keyframes zoomy {
+  0%, 100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.8); } }
+@keyframes shifty {
+  0%, 21%, 50%, 71%, 100% {
+    transform: translateX(0rem); }
+  1%, 20% {
+    transform: translateX(-1rem); }
+  6% {
+    transform: translateX(-0.7rem); }
+  51%, 70% {
+    transform: translateX(1rem); }
+  56% {
+    transform: translateX(0.7rem); } }
+#ghost > div {
+  animation: floaty 2s infinite;
+  animation-timing-function: ease-in-out;
+  width: auto;
+  margin: 5px auto;
+  position: relative; }
+  #ghost > div .body {
+    position: relative;
+    margin: auto;
+    width: 14rem;
+    height: 19rem;
+    background: #F5F6FF;
+    border-top-right-radius: 7rem;
+    border-top-left-radius: 7rem;
+    border-left: 1.2rem solid #dcdfff;
+    border-right: 0.5rem solid #dcdfff; }
+    #ghost > div .body:before, #ghost > div .body:after {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      top: 13rem;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      background: #dcdfff;
+      animation: floaty .3s infinite;
+      animation-timing-function: ease-in-out; }
+    #ghost > div .body:before {
+      left: -3.2rem; }
+    #ghost > div .body:after {
+      right: -2.1rem;
+      animation-delay: -0.1s; }
+  #ghost > div .eyes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem auto;
+    padding: 6rem 0rem 0rem;
+    width: 5rem;
+    height: 1.2rem;
+    animation: shifty 15s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s; }
+    #ghost > div .eyes:before, #ghost > div .eyes:after {
+      content: '';
+      display: block;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: #000;
+      border-radius: 100%; }
+  #ghost > div .mouth {
+    background: #272533;
+    margin: 3rem auto 0rem;
+    width: 5.5rem;
+    height: 2.8rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    animation: zoomy 5s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s; }
+    #ghost > div .mouth:before {
+      content: '';
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background: #88E471;
+      margin-left: 1rem;
+      border-bottom-left-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem; }
+  #ghost > div .feet {
+    position: absolute;
+    z-index: -3;
+    display: flex;
+    bottom: -1.2rem;
+    left: -1.2rem;
+    width: 14rem;
+    height: 2.4rem; }
+    #ghost > div .feet > *, #ghost > div .feet:before, #ghost > div .feet:after {
+      content: '';
+      width: 2.4rem;
+      height: 2.4rem;
+      background: #F5F6FF;
+      border-radius: 50%;
+      border-bottom: 0.4rem solid #dcdfff; }
+    #ghost > div .feet:before {
+      border-left: 1.2rem solid #dcdfff; }
+    #ghost > div .feet:after {
+      border-right: 0.5rem solid #dcdfff; }
+    #ghost > div .feet *:nth-child(odd) {
+      margin-top: 0.2rem; }
+  #ghost > div .shadow {
+    position: relative;
+    bottom: -8rem;
+    z-index: -1;
+    margin: auto;
+    background: black;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 100%;
+    animation: zoomy 2s infinite;
+    animation-timing-function: ease-in-out; }
+
+/*# sourceMappingURL=style.css.map */

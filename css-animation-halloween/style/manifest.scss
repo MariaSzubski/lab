@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Jolly+Lodger');
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css');
+
+$black: #000;
+$white: #F5F6FF;
+$dark-gray: #272533;
+$orange: #F59651;
+$green: #88E471;
+
+@import 'global.scss';
+@import 'animations.scss';
+@import 'ghost.scss';

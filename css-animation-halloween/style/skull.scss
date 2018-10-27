@@ -1,0 +1,174 @@
+#skull > div{
+  animation: floaty 2s infinite;
+  animation-timing-function: ease-in-out;
+  width: auto;
+  margin: 5px auto;
+  position: relative;
+
+  .head{
+    @include body;
+    position: relative;
+    margin: auto;
+    width: 18rem;
+    height: 13rem;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 16rem;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 90%;
+  }
+
+  .jaw{
+    @include body;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 7.4rem;
+    height: 5rem;
+    bottom: -4rem;
+    right: 3rem;
+    border-radius: 0.5rem;
+  }
+
+  .teeth{
+    background-color: $dark-gray;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    height: 2.8rem;
+    width: 4.8rem;
+    margin: 1rem auto 0rem 0.3rem;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    animation: grimmace 10s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    & > div{
+      flex: 0 0 25%;
+      height: 50%;
+      border: 0.2rem solid $dark-gray;
+      background-color: $white;
+      border-radius: 0.4rem;
+    }
+  }
+
+  .eyes{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 2rem 0rem auto;
+    padding: 5rem 0rem 0rem;
+    width: 10.5rem;
+    height: 1.2rem;
+    &:before,
+    &:after{
+      content: '';
+      display: block;
+      width: 3.4rem;
+      height: 3.4rem;
+      background: $dark-gray;
+      border-radius: 100%;
+    }
+    animation: shifty 15s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+  }
+
+   .star {
+    margin: 0rem auto 0rem -2rem;;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 4rem solid transparent;
+    border-bottom: 3rem solid $green;
+    border-left: 4rem solid transparent;
+    transform: rotate(35deg);
+    &:before {
+      content: '';
+      display: block;
+      border-bottom: 3rem solid $green;
+      border-left: 1.1rem solid transparent;
+      border-right: 1.1rem solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -1.8rem;
+      left: -2.4rem;
+      transform: rotate(-35deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      color: red;
+      top: 2.8px;
+      left: -4rem;
+      width: 0px;
+      height: 0px;
+      border-right: 4rem solid transparent;
+      border-bottom: 3rem solid $green;
+      border-left: 4rem solid transparent;
+      transform: rotate(-70deg);
+    }
+  }
+
+  .nose{
+    display: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin: 0rem -2.5rem 0rem auto;
+    padding: 2.6rem 0rem 0rem;
+    &:after{
+      content: '';
+      display: block;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-bottom: 2.8rem solid $dark-gray;
+      border-radius: 1rem;
+      transform: rotate(-4deg);
+    }
+  }
+
+  .hat{
+    position: relative;
+    z-index: 1000;
+    width: 19rem;
+    margin: -1.5rem auto;
+    background-color: none;
+    border-left: 0.9rem solid transparent;
+    border-right: 0.9rem solid transparent;
+    border-bottom: 2rem solid $orange;
+    border-radius: 0.8rem;
+    transform: rotate(-8deg);
+    animation: tipsy 10s infinite;
+    animation-timing-function: ease;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -11rem;
+      left: 2rem;
+      border-left: 4rem solid transparent;
+      border-right: 8rem solid transparent;
+      border-bottom: 12rem solid $orange;
+      border-radius: 1rem;
+      transform: rotate(-2deg);
+    }
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 11.2rem;
+      top: -0.8rem;
+      left: 2.5rem;
+      border-left: 0.23rem solid transparent;
+      border-right: 0.55rem solid transparent;
+      border-bottom: 0.8rem solid $purple;
+    }
+  }
+}

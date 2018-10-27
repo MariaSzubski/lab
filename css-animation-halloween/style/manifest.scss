@@ -6,7 +6,10 @@ $white: #F5F6FF;
 $dark-gray: #272533;
 $orange: #F59651;
 $green: #88E471;
+$purple: #AE4BC7;
 
+@import 'mixins.scss';
 @import 'global.scss';
 @import 'animations.scss';
 @import 'ghost.scss';
+@import 'skull.scss';

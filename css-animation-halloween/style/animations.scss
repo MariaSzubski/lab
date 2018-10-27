@@ -16,6 +16,31 @@
   }
 }
 
+@keyframes grimmace{
+  20%, 80%{
+    transform: scaleY(1);
+  }
+  30%{
+    transform: scaleY(0.7);
+  }
+  75%{
+    transform: scaleY(0.7);
+  }
+}
+
+@keyframes tipsy{
+  20%, 45%{
+    transform: rotate(-10);
+  }
+  25%{
+    transform: scaleY(1);
+  }
+
+  40%{
+    transform: scaleY(1);
+  }
+}
+
 @keyframes shifty{
   0%, 21%, 50%, 71%, 100%{
     transform: translateX(0rem);

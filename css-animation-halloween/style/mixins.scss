@@ -1,0 +1,5 @@
+@mixin body{
+  border-left: 1.2rem solid darken($white, 5%);
+  border-right: 0.5rem solid darken($white, 5%);
+  background-color: $white;
+}

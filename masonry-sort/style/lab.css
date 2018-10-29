@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700");
+html, body {
+  font-family: Nunito;
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem; }
+
+body * {
+  box-sizing: inherit; }
+
+#content article {
+  position: relative;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #5AAFD4;
+  min-width: 12rem;
+  max-width: 19rem;
+  width: auto;
+  overflow: hidden; }
+  @media (max-width: 680px) {
+    #content article {
+      max-width: 100%; } }
+  #content article div {
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    height: auto; }
+  #content article small {
+    text-transform: uppercase;
+    font-size: 50%;
+    font-weight: 700; }
+  #content article img {
+    width: 100%;
+    object-fit: cover; }
+  #content article h4 {
+    text-align: right; }
+  #content article s {
+    color: #999; }
+  #content article p {
+    font-size: 80%; }
+
+.sale h4 {
+  color: #E34399; }
+
+@media (max-width: 767px) {
+  #filters #filters-desktop {
+    display: none; }
+  #filters #filters-mobile {
+    display: block; } }
+@media (min-width: 768px) {
+  #filters #filters-desktop {
+    display: block; }
+  #filters #filters-mobile {
+    display: none; } }
+
+/*# sourceMappingURL=lab.css.map */

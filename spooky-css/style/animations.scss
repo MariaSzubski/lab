@@ -3,7 +3,7 @@
     transform: translateY(0);
   }
   50%{
-    transform: translateY(-3rem);
+    transform: translateY(-4rem);
   }
 }
 
@@ -17,27 +17,34 @@
 }
 
 @keyframes grimmace{
-  20%, 80%{
+  0%, 80%{
     transform: scaleY(1);
   }
-  30%{
+  8%{
+    transform: scaleY(1);
+  }
+  16%, 20%{
+    transform: scaleY(0.6);
+  }
+  24%, 32%, 40%, 75%{
     transform: scaleY(0.7);
   }
-  75%{
-    transform: scaleY(0.7);
+  4%, 28%, 36%, 44%, 77%{
+    transform: scaleY(0.9);
   }
 }
 
 @keyframes tipsy{
-  20%, 45%{
-    transform: rotate(-10);
-  }
-  25%{
-    transform: scaleY(1);
+  8%, 20%, 45%, 92% {
+    transform: rotate(-12deg);
   }
 
-  40%{
-    transform: scaleY(1);
+  76% {
+    transform: rotate(-15deg);
+  }
+
+  15%, 27%, 56%, 82% {
+    transform: rotate(-8deg);
   }
 }
 

@@ -127,25 +127,34 @@ aside {
   animation: zoomy 2s infinite;
   animation-timing-function: ease-in-out; }
 
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-4rem); } }
 @keyframes zoomy {
   0%, 100% {
     transform: scale(1); }
   50% {
     transform: scale(0.8); } }
 @keyframes grimmace {
-  20%, 80% {
+  0%, 80% {
     transform: scaleY(1); }
-  30% {
+  8% {
+    transform: scaleY(1); }
+  16%, 20% {
+    transform: scaleY(0.6); }
+  24%, 32%, 40%, 75% {
     transform: scaleY(0.7); }
-  75% {
-    transform: scaleY(0.7); } }
+  4%, 28%, 36%, 44%, 77% {
+    transform: scaleY(0.9); } }
 @keyframes tipsy {
-  20%, 45% {
-    transform: rotate(-10); }
-  25% {
-    transform: scaleY(1); }
-  40% {
-    transform: scaleY(1); } }
+  8%, 20%, 45%, 92% {
+    transform: rotate(-12deg); }
+  76% {
+    transform: rotate(-15deg); }
+  15%, 27%, 56%, 82% {
+    transform: rotate(-8deg); } }
 @keyframes shifty {
   0%, 21%, 50%, 71%, 100% {
     transform: translateX(0rem); }
@@ -253,7 +262,7 @@ aside {
   animation: floaty 2s infinite;
   animation-timing-function: ease-in-out;
   width: auto;
-  margin: 5px auto;
+  margin: 65px auto 5px;
   position: relative; }
   #skull > div .head {
     border-left: 1.2rem solid #dcdfff;
@@ -289,7 +298,7 @@ aside {
     margin: 1rem auto 0rem 0.3rem;
     padding: 0.2rem;
     border-radius: 0.3rem;
-    animation: grimmace 10s infinite;
+    animation: grimmace 12s infinite;
     animation-timing-function: ease-in;
     animation-delay: 1s; }
     #skull > div .teeth > div {
@@ -372,36 +381,36 @@ aside {
   #skull > div .hat {
     position: relative;
     z-index: 1000;
-    width: 19rem;
-    margin: -1.5rem auto;
+    width: 16rem;
+    margin: -1.8rem auto -2rem 10.6rem;
     background-color: none;
     border-left: 0.9rem solid transparent;
     border-right: 0.9rem solid transparent;
-    border-bottom: 2rem solid #F59651;
+    border-bottom: 2rem solid #AE4BC7;
     border-radius: 0.8rem;
     transform: rotate(-8deg);
-    animation: tipsy 10s infinite;
+    animation: tipsy 12s infinite;
     animation-timing-function: ease; }
     #skull > div .hat:before {
       content: '';
       display: block;
       position: absolute;
-      top: -11rem;
-      left: 2rem;
+      top: -13rem;
+      left: 1.4rem;
       border-left: 4rem solid transparent;
-      border-right: 8rem solid transparent;
-      border-bottom: 12rem solid #F59651;
+      border-right: 7rem solid transparent;
+      border-bottom: 14rem solid #AE4BC7;
       border-radius: 1rem;
       transform: rotate(-2deg); }
     #skull > div .hat:after {
       content: '';
       display: block;
       position: absolute;
-      width: 11.2rem;
-      top: -0.8rem;
-      left: 2.5rem;
+      width: 11rem;
+      top: -1rem;
+      left: 1.5rem;
       border-left: 0.23rem solid transparent;
-      border-right: 0.55rem solid transparent;
-      border-bottom: 0.8rem solid #AE4BC7; }
+      border-right: 0.4rem solid transparent;
+      border-bottom: 1rem solid #F59651; }
 
 /*# sourceMappingURL=style.css.map */

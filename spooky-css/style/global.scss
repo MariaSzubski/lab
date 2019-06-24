@@ -7,6 +7,11 @@ html{
 
 body{
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100vh;
   overflow: hidden;
   margin: 0rem;
   padding: 0rem;
@@ -25,37 +30,74 @@ header{
   color: $white;
   text-align: center;
   padding: 2rem;
+  height: auto;
 
-  h1{
-    font-family: 'Jolly Lodger';
-    font-size: 5rem;
-    letter-spacing: 0.4rem;
-    color: $orange;
-    margin: 0rem;
-  }
-
-  h2{
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    color: lighten($dark-gray, 20%);
-    display: inline-flex;
-    align-items: center;
+  img {
+    width: 1.6rem;
     height: 1.6rem;
+    margin-right: 0.4rem;
   }
 }
 
 main{
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .container{
   width: 40rem;
-  height: 40rem;
-  padding: 1rem;
+  height: 30rem;
+}
+
+h1{
+  font-family: 'Jolly Lodger';
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+  color: $orange;
+  margin: 0rem;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: lighten($dark-gray, 20%);
+  display: inline-flex;
+  align-items: center;
+  height: 1.6rem;
+}
+
+h3{
+  font-family: 'Jolly Lodger';
+  font-size: 2.8rem;
+  letter-spacing: 0.4rem;
+  color: $white;
+  text-align: center;
+  margin: 0rem 0rem 2rem;
+}
+.thumbWrapper{
+  margin-top: -6rem;
+}
+.thumbs{
+  display: flex;
+
+  img{
+    width: 20rem;
+    height: 20rem;
+  }
+  a{
+    display: block;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow .12s ease-out;
+    &:hover{
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+      transition: box-shadow .12s ease-in;
+    }
+  }
 }
 
 a{
@@ -70,11 +112,6 @@ a{
   padding: 0rem 0.6em;
   &:hover{
     text-decoration: underline;
-  }
-  img {
-    width: 1.6rem;
-    height: 1.6rem;
-    margin-right: 0.3rem;
   }
 }
 

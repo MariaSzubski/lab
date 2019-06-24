@@ -64,25 +64,26 @@ h2 {
 
 h3 {
   font-family: 'Jolly Lodger';
-  font-size: 2.8rem;
+  font-size: 3.4rem;
   letter-spacing: 0.4rem;
   color: #F5F6FF;
   text-align: center;
   margin: 0rem 0rem 2rem; }
 
 .thumbWrapper {
-  margin-top: -6rem; }
+  margin-top: -12rem; }
 
 .thumbs {
   display: flex; }
   .thumbs img {
-    width: 20rem;
+    width: 18rem;
     height: 20rem; }
   .thumbs a {
     display: block;
     height: auto;
     border-radius: 5px;
     overflow: hidden;
+    margin: 0rem 0.5rem;
     transition: box-shadow .12s ease-out; }
     .thumbs a:hover {
       box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
@@ -111,6 +112,8 @@ aside {
     aside a:focus, aside a:hover {
       opacity: 1;
       transition: opacity .12s ease-out; }
+      aside a:focus img, aside a:hover img {
+        cursor: pointer; }
     aside a img {
       width: 4rem;
       height: 4rem; }

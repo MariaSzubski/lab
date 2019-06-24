@@ -78,6 +78,25 @@ a{
   }
 }
 
+aside{
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  a{
+    opacity: 0.4;
+    transition: opacity .12s ease-in;
+    &:focus,
+    &:hover {
+      opacity: 1;
+      transition: opacity .12s ease-out;
+    }
+    img{
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+
 .shadow{
   position: relative;
   bottom: -8rem;

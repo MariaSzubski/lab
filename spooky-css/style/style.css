@@ -68,6 +68,20 @@ a {
     height: 1.6rem;
     margin-right: 0.3rem; }
 
+aside {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem; }
+  aside a {
+    opacity: 0.4;
+    transition: opacity .12s ease-in; }
+    aside a:focus, aside a:hover {
+      opacity: 1;
+      transition: opacity .12s ease-out; }
+    aside a img {
+      width: 4rem;
+      height: 4rem; }
+
 .shadow {
   position: relative;
   bottom: -8rem;

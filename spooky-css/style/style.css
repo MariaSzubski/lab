@@ -433,8 +433,10 @@ aside {
     border-bottom-right-radius: 11.5rem;
     border-bottom-left-radius: 11.5rem; }
     #pumpkin > div .body .ridges {
-      position: relative;
-      margin: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
       width: 24rem;
       height: 100%;
       border-left: 1.2rem solid #f37c26;
@@ -447,8 +449,10 @@ aside {
     #pumpkin > div .body .ridges:after {
       content: "";
       display: block;
-      position: relative;
-      margin: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 21;
       width: 13rem;
       height: 100%;
       border-left: 1.2rem solid #f37c26;
@@ -457,5 +461,56 @@ aside {
       border-top-left-radius: 80%;
       border-bottom-right-radius: 100%;
       border-bottom-left-radius: 100%; }
+  #pumpkin > div .eyes {
+    position: relative;
+    z-index: 22;
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem auto;
+    padding: 5.4rem 0rem 0rem;
+    width: 15rem;
+    height: 10rem; }
+    #pumpkin > div .eyes:before, #pumpkin > div .eyes:after {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 2.8rem;
+      border-bottom: 2.8rem solid #431e04;
+      border-left: 2.3rem solid transparent;
+      border-right: 2.3rem solid transparent; }
+  #pumpkin > div .mouth {
+    position: relative;
+    z-index: 23;
+    background: #431e04;
+    margin: 3.5rem auto 0rem;
+    width: 15rem;
+    height: 3.5rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem; }
+    #pumpkin > div .mouth:before {
+      position: relative;
+      left: 2rem;
+      content: '';
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+      background: #F59651;
+      margin-left: 1rem;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem; }
+    #pumpkin > div .mouth:after {
+      position: relative;
+      right: -9rem;
+      bottom: -.8rem;
+      content: '';
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+      background: #F59651;
+      margin-left: 1rem;
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem; }
 
 /*# sourceMappingURL=style.css.map */

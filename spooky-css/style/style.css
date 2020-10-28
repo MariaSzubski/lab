@@ -471,7 +471,7 @@ aside {
     width: 15rem;
     height: 10rem; }
     #pumpkin > div .eyes:before, #pumpkin > div .eyes:after {
-      content: '';
+      content: "";
       display: block;
       width: 2rem;
       height: 2.8rem;
@@ -492,7 +492,7 @@ aside {
     #pumpkin > div .mouth:before {
       position: relative;
       left: 2rem;
-      content: '';
+      content: "";
       display: block;
       width: 1.4rem;
       height: 1.4rem;
@@ -501,16 +501,42 @@ aside {
       border-bottom-left-radius: 0.2rem;
       border-bottom-right-radius: 0.2rem; }
     #pumpkin > div .mouth:after {
+      content: "";
+      display: block;
       position: relative;
       right: -9rem;
-      bottom: -.8rem;
-      content: '';
-      display: block;
+      bottom: -0.8rem;
       width: 1.4rem;
       height: 1.4rem;
-      background: #F59651;
       margin-left: 1rem;
       border-top-left-radius: 0.2rem;
-      border-top-right-radius: 0.2rem; }
+      border-top-right-radius: 0.2rem;
+      background: #F59651; }
+  #pumpkin > div .stem-shadow {
+    position: absolute;
+    z-index: 29;
+    top: -0.17rem;
+    left: 49.8%;
+    width: 4.2rem;
+    height: 1.8rem;
+    transform: rotateZ(-18deg) skew(15deg, 18deg) translateX(-50%);
+    background: #f27317;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1rem; }
+  #pumpkin > div .stem {
+    position: absolute;
+    z-index: 30;
+    top: -4.4rem;
+    left: 45%;
+    width: 3.7rem;
+    height: 5.8rem;
+    transform: rotateZ(-19deg) skew(15deg, 18deg) translateX(-50%);
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    border-left: 0.9rem solid #4bd629;
+    border-right: 0.5rem solid #4bd629;
+    background: #88E471; }
 
 /*# sourceMappingURL=style.css.map */

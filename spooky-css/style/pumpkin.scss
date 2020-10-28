@@ -61,7 +61,7 @@ $border-right: 0.5rem solid darken($orange, 9%);
     }
   }
 
-  .eyes{
+  .eyes {
     position: relative;
     z-index: 22;
 
@@ -73,8 +73,8 @@ $border-right: 0.5rem solid darken($orange, 9%);
     height: 10rem;
 
     &:before,
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       display: block;
       width: 2rem;
       height: 2.8rem;
@@ -85,7 +85,7 @@ $border-right: 0.5rem solid darken($orange, 9%);
     }
   }
 
-  .mouth{
+  .mouth {
     position: relative;
     z-index: 23;
 
@@ -99,10 +99,10 @@ $border-right: 0.5rem solid darken($orange, 9%);
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
 
-    &:before{
+    &:before {
       position: relative;
       left: 2rem;
-      content: '';
+      content: "";
       display: block;
       width: 1.4rem;
       height: 1.4rem;
@@ -112,18 +112,54 @@ $border-right: 0.5rem solid darken($orange, 9%);
       border-bottom-right-radius: 0.2rem;
     }
 
-    &:after{
+    &:after {
+      content: "";
+      display: block;
+
       position: relative;
       right: -9rem;
-      bottom: -.8rem;
-      content: '';
-      display: block;
+      bottom: -0.8rem;
       width: 1.4rem;
       height: 1.4rem;
-      background: $orange;
       margin-left: 1rem;
+
       border-top-left-radius: 0.2rem;
       border-top-right-radius: 0.2rem;
+      background: $orange;
     }
+  }
+
+  .stem-shadow {
+    position: absolute;
+    z-index: 29;
+    top: -0.17rem;
+    left: 49.8%;
+    width: 4.2rem;
+    height: 1.8rem;
+
+    transform: rotateZ(-18deg) skew(15deg, 18deg) translateX(-50%);
+    background: darken($orange, 12%);
+
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .stem {
+    position: absolute;
+    z-index: 30;
+    top: -4.4rem;
+    left: 45%;
+    width: 3.7rem;
+    height: 5.8rem;
+    transform: rotateZ(-19deg) skew(15deg, 18deg) translateX(-50%);
+
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+
+    border-left: 0.9rem solid darken($green, 17%);
+    border-right: 0.5rem solid darken($green, 17%);
+    background: $green;
   }
 }

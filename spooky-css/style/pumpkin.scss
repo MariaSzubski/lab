@@ -1,0 +1,57 @@
+$border-left: 1.2rem solid darken($orange, 9%);
+$border-right: 0.5rem solid darken($orange, 9%);
+
+#pumpkin > div {
+  width: auto;
+  margin: 5px auto;
+  position: relative;
+
+  .body {
+    position: relative;
+    margin: auto;
+    width: 30rem;
+    height: 21.5rem;
+
+    border-left: $border-left;
+    border-right: $border-right;
+    background-color: $orange;
+
+    border-top-right-radius: 8.5rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 11.5rem;
+    border-bottom-left-radius: 11.5rem;
+
+    .ridges {
+      position: relative;
+      margin: auto;
+      width: 24rem;
+      height: 100%;
+
+      border-left: $border-left;
+      border-right: $border-right;
+      background-color: $orange;
+
+      border-top-right-radius: 75%;
+      border-top-left-radius: 75%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+    }
+
+    .ridges:after {
+      content: "";
+      display: block;
+      position: relative;
+      margin: auto;
+      width: 13rem;
+      height: 100%;
+
+      border-left: $border-left;
+      border-right: $border-right;
+
+      border-top-right-radius: 80%;
+      border-top-left-radius: 80%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+    }
+  }
+}

@@ -416,4 +416,46 @@ aside {
       border-right: 0.4rem solid transparent;
       border-bottom: 1rem solid #F59651; }
 
+#pumpkin > div {
+  width: auto;
+  margin: 5px auto;
+  position: relative; }
+  #pumpkin > div .body {
+    position: relative;
+    margin: auto;
+    width: 30rem;
+    height: 21.5rem;
+    border-left: 1.2rem solid #f37c26;
+    border-right: 0.5rem solid #f37c26;
+    background-color: #F59651;
+    border-top-right-radius: 8.5rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 11.5rem;
+    border-bottom-left-radius: 11.5rem; }
+    #pumpkin > div .body .ridges {
+      position: relative;
+      margin: auto;
+      width: 24rem;
+      height: 100%;
+      border-left: 1.2rem solid #f37c26;
+      border-right: 0.5rem solid #f37c26;
+      background-color: #F59651;
+      border-top-right-radius: 75%;
+      border-top-left-radius: 75%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%; }
+    #pumpkin > div .body .ridges:after {
+      content: "";
+      display: block;
+      position: relative;
+      margin: auto;
+      width: 13rem;
+      height: 100%;
+      border-left: 1.2rem solid #f37c26;
+      border-right: 0.5rem solid #f37c26;
+      border-top-right-radius: 80%;
+      border-top-left-radius: 80%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%; }
+
 /*# sourceMappingURL=style.css.map */

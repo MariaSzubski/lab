@@ -19,7 +19,9 @@ body {
   padding: 0rem;
   background: #272533; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: Nunito;
   font-size: 16px;
@@ -46,12 +48,29 @@ main {
   width: 40rem;
   height: 30rem; }
 
-h1 {
-  font-family: 'Jolly Lodger';
-  font-size: 5rem;
+a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #6b658c;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 1.6rem;
+  padding: 0rem 0.6em; }
+  a:hover {
+    text-decoration: underline; }
+
+h1 a {
+  font-family: "Jolly Lodger";
+  font-size: 6.5rem;
   letter-spacing: 0.4rem;
   color: #F59651;
-  margin: 0rem; }
+  margin: 0rem;
+  display: inline-block;
+  height: auto;
+  padding: inherit;
+  text-transform: capitalize; }
 
 h2 {
   text-transform: uppercase;
@@ -63,7 +82,7 @@ h2 {
   height: 1.6rem; }
 
 h3 {
-  font-family: 'Jolly Lodger';
+  font-family: "Jolly Lodger";
   font-size: 3.4rem;
   letter-spacing: 0.4rem;
   color: #F5F6FF;
@@ -84,39 +103,26 @@ h3 {
     border-radius: 5px;
     overflow: hidden;
     margin: 0rem 0.5rem;
-    transition: box-shadow .12s ease-out; }
+    transition: box-shadow 0.12s ease-out; }
     .thumbs a:hover {
       box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-      transition: box-shadow .12s ease-in; }
-
-a {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  color: #6b658c;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  height: 1.6rem;
-  padding: 0rem 0.6em; }
-  a:hover {
-    text-decoration: underline; }
+      transition: box-shadow 0.12s ease-in; }
 
 aside {
   position: fixed;
   bottom: 2rem;
-  right: 1rem; }
+  right: 1.5rem;
+  cursor: pointer; }
   aside a {
-    opacity: 0.4;
-    transition: opacity .12s ease-in; }
+    opacity: 0.6;
+    transition: opacity 0.12s ease-in; }
     aside a:focus, aside a:hover {
       opacity: 1;
-      transition: opacity .12s ease-out; }
-      aside a:focus img, aside a:hover img {
-        cursor: pointer; }
+      transition: opacity 0.12s ease-out; }
     aside a img {
-      width: 4rem;
-      height: 4rem; }
+      width: 5.8rem;
+      height: 5.8rem;
+      cursor: pointer; }
 
 .shadow {
   position: relative;

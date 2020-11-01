@@ -169,6 +169,20 @@ aside {
     transform: translateX(1rem); }
   56% {
     transform: translateX(0.7rem); } }
+@keyframes flickerbg {
+  0%, 18%, 29%, 32%, 34%, 45%, 100% {
+    background-color: #431e04; }
+  12%, 31%, 33% {
+    background-color: #a44a09; }
+  70% {
+    background-color: #bc550b; } }
+@keyframes flickerbr {
+  0%, 18%, 29%, 32%, 34%, 45%, 100% {
+    border-bottom-color: #431e04; }
+  12%, 31%, 33% {
+    border-bottom-color: #a44a09; }
+  70% {
+    border-bottom-color: #bc550b; } }
 #ghost > div {
   animation: floaty 2s infinite;
   animation-timing-function: ease-in-out;
@@ -419,7 +433,9 @@ aside {
 #pumpkin > div {
   width: auto;
   margin: 5px auto;
-  position: relative; }
+  position: relative;
+  animation: floaty 2s infinite;
+  animation-timing-function: ease-in-out; }
   #pumpkin > div .body {
     position: relative;
     margin: auto;
@@ -468,33 +484,55 @@ aside {
     justify-content: space-between;
     margin: 0rem auto;
     padding: 5.4rem 0rem 0rem;
-    width: 15rem;
-    height: 10rem; }
+    width: 16rem;
+    height: 8.8rem;
+    transform: rotateZ(-2deg); }
     #pumpkin > div .eyes:before, #pumpkin > div .eyes:after {
       content: "";
       display: block;
       width: 2rem;
       height: 2.8rem;
+      border-radius: 20%;
       border-bottom: 2.8rem solid #431e04;
       border-left: 2.3rem solid transparent;
-      border-right: 2.3rem solid transparent; }
+      border-right: 2.3rem solid transparent;
+      animation: flickerbr 16s infinite;
+      animation-timing-function: ease-in;
+      animation-delay: 1s; }
+  #pumpkin > div .nose {
+    position: relative;
+    z-index: 23;
+    width: 1.6rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    margin: auto;
+    transform: rotateZ(-5deg);
+    border-bottom: 2.2rem solid #431e04;
+    border-left: 1.4rem solid transparent;
+    border-right: 1.4rem solid transparent;
+    animation: flickerbr 16s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s; }
   #pumpkin > div .mouth {
     position: relative;
     z-index: 23;
-    background: #431e04;
-    margin: 3.5rem auto 0rem;
-    width: 15rem;
-    height: 3.5rem;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem; }
+    background-color: #431e04;
+    margin: 2.3rem auto 0rem;
+    width: 13.5rem;
+    height: 4.4rem;
+    border-bottom-left-radius: 13.5rem;
+    border-bottom-right-radius: 13.5rem;
+    transform: rotate(3deg);
+    animation: flickerbg 16s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s; }
     #pumpkin > div .mouth:before {
       position: relative;
-      left: 2rem;
+      left: 1.6rem;
+      top: -0.1rem;
       content: "";
       display: block;
-      width: 1.4rem;
+      width: 1.8rem;
       height: 1.4rem;
       background: #F59651;
       margin-left: 1rem;
@@ -504,9 +542,9 @@ aside {
       content: "";
       display: block;
       position: relative;
-      right: -9rem;
-      bottom: -0.8rem;
-      width: 1.4rem;
+      right: -7.5rem;
+      bottom: -1.8rem;
+      width: 2rem;
       height: 1.4rem;
       margin-left: 1rem;
       border-top-left-radius: 0.2rem;

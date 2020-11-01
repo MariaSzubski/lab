@@ -65,3 +65,27 @@
     transform: translateX(0.7rem);
   }
 }
+
+@keyframes flickerbg{
+  0%, 18%, 29%, 32%, 34%, 45%, 100%{
+    background-color: darken($orange, 50%);
+  }
+  12%, 31%, 33% {
+    background-color: darken($orange, 30%);
+  }
+  70% {
+    background-color: darken($orange, 25%);
+  }
+}
+
+@keyframes flickerbr{
+  0%, 18%, 29%, 32%, 34%, 45%, 100%{
+    border-bottom-color: darken($orange, 50%);
+  }
+  12%, 31%, 33% {
+    border-bottom-color: darken($orange, 30%);
+  }
+  70% {
+    border-bottom-color: darken($orange, 25%);
+  }
+}

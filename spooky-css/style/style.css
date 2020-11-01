@@ -19,7 +19,9 @@ body {
   padding: 0rem;
   background: #272533; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: Nunito;
   font-size: 16px;
@@ -46,12 +48,29 @@ main {
   width: 40rem;
   height: 30rem; }
 
-h1 {
-  font-family: 'Jolly Lodger';
-  font-size: 5rem;
+a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #6b658c;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 1.6rem;
+  padding: 0rem 0.6em; }
+  a:hover {
+    text-decoration: underline; }
+
+h1 a {
+  font-family: "Jolly Lodger";
+  font-size: 6.5rem;
   letter-spacing: 0.4rem;
   color: #F59651;
-  margin: 0rem; }
+  margin: 0rem;
+  display: inline-block;
+  height: auto;
+  padding: inherit;
+  text-transform: capitalize; }
 
 h2 {
   text-transform: uppercase;
@@ -63,7 +82,7 @@ h2 {
   height: 1.6rem; }
 
 h3 {
-  font-family: 'Jolly Lodger';
+  font-family: "Jolly Lodger";
   font-size: 3.4rem;
   letter-spacing: 0.4rem;
   color: #F5F6FF;
@@ -84,39 +103,26 @@ h3 {
     border-radius: 5px;
     overflow: hidden;
     margin: 0rem 0.5rem;
-    transition: box-shadow .12s ease-out; }
+    transition: box-shadow 0.12s ease-out; }
     .thumbs a:hover {
       box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-      transition: box-shadow .12s ease-in; }
-
-a {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  color: #6b658c;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  height: 1.6rem;
-  padding: 0rem 0.6em; }
-  a:hover {
-    text-decoration: underline; }
+      transition: box-shadow 0.12s ease-in; }
 
 aside {
   position: fixed;
   bottom: 2rem;
-  right: 1rem; }
+  right: 1.5rem;
+  cursor: pointer; }
   aside a {
-    opacity: 0.4;
-    transition: opacity .12s ease-in; }
+    opacity: 0.6;
+    transition: opacity 0.12s ease-in; }
     aside a:focus, aside a:hover {
       opacity: 1;
-      transition: opacity .12s ease-out; }
-      aside a:focus img, aside a:hover img {
-        cursor: pointer; }
+      transition: opacity 0.12s ease-out; }
     aside a img {
-      width: 4rem;
-      height: 4rem; }
+      width: 5.8rem;
+      height: 5.8rem;
+      cursor: pointer; }
 
 .shadow {
   position: relative;
@@ -169,6 +175,20 @@ aside {
     transform: translateX(1rem); }
   56% {
     transform: translateX(0.7rem); } }
+@keyframes flickerbg {
+  0%, 18%, 29%, 32%, 34%, 45%, 100% {
+    background-color: #431e04; }
+  12%, 31%, 33% {
+    background-color: #a44a09; }
+  70% {
+    background-color: #bc550b; } }
+@keyframes flickerbr {
+  0%, 18%, 29%, 32%, 34%, 45%, 100% {
+    border-bottom-color: #431e04; }
+  12%, 31%, 33% {
+    border-bottom-color: #a44a09; }
+  70% {
+    border-bottom-color: #bc550b; } }
 #ghost > div {
   animation: floaty 2s infinite;
   animation-timing-function: ease-in-out;
@@ -415,5 +435,152 @@ aside {
       border-left: 0.23rem solid transparent;
       border-right: 0.4rem solid transparent;
       border-bottom: 1rem solid #F59651; }
+
+#pumpkin > div {
+  width: auto;
+  margin: 5px auto;
+  position: relative;
+  animation: floaty 2s infinite;
+  animation-timing-function: ease-in-out; }
+  #pumpkin > div .body {
+    position: relative;
+    margin: auto;
+    width: 30rem;
+    height: 21.5rem;
+    border-left: 1.2rem solid #f37c26;
+    border-right: 0.5rem solid #f37c26;
+    background-color: #F59651;
+    border-top-right-radius: 8.5rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 11.5rem;
+    border-bottom-left-radius: 11.5rem; }
+    #pumpkin > div .body .ridges {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+      width: 24rem;
+      height: 100%;
+      border-left: 1.2rem solid #f37c26;
+      border-right: 0.5rem solid #f37c26;
+      background-color: #F59651;
+      border-top-right-radius: 75%;
+      border-top-left-radius: 75%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%; }
+    #pumpkin > div .body .ridges:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 21;
+      width: 13rem;
+      height: 100%;
+      border-left: 1.2rem solid #f37c26;
+      border-right: 0.5rem solid #f37c26;
+      border-top-right-radius: 80%;
+      border-top-left-radius: 80%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%; }
+  #pumpkin > div .eyes {
+    position: relative;
+    z-index: 22;
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem auto;
+    padding: 5.4rem 0rem 0rem;
+    width: 16rem;
+    height: 8.8rem;
+    transform: rotateZ(-2deg); }
+    #pumpkin > div .eyes:before, #pumpkin > div .eyes:after {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: 2.8rem;
+      border-radius: 20%;
+      border-bottom: 2.8rem solid #431e04;
+      border-left: 2.3rem solid transparent;
+      border-right: 2.3rem solid transparent;
+      animation: flickerbr 16s infinite;
+      animation-timing-function: ease-in;
+      animation-delay: 1s; }
+  #pumpkin > div .nose {
+    position: relative;
+    z-index: 23;
+    width: 1.6rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    margin: auto;
+    transform: rotateZ(-5deg);
+    border-bottom: 2.2rem solid #431e04;
+    border-left: 1.4rem solid transparent;
+    border-right: 1.4rem solid transparent;
+    animation: flickerbr 16s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s; }
+  #pumpkin > div .mouth {
+    position: relative;
+    z-index: 23;
+    background-color: #431e04;
+    margin: 2.3rem auto 0rem;
+    width: 13.5rem;
+    height: 4.4rem;
+    border-bottom-left-radius: 13.5rem;
+    border-bottom-right-radius: 13.5rem;
+    transform: rotate(3deg);
+    animation: flickerbg 16s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s; }
+    #pumpkin > div .mouth:before {
+      position: relative;
+      left: 1.6rem;
+      top: -0.1rem;
+      content: "";
+      display: block;
+      width: 1.8rem;
+      height: 1.4rem;
+      background: #F59651;
+      margin-left: 1rem;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem; }
+    #pumpkin > div .mouth:after {
+      content: "";
+      display: block;
+      position: relative;
+      right: -7.5rem;
+      bottom: -1.8rem;
+      width: 2rem;
+      height: 1.4rem;
+      margin-left: 1rem;
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem;
+      background: #F59651; }
+  #pumpkin > div .stem-shadow {
+    position: absolute;
+    z-index: 29;
+    top: -0.17rem;
+    left: 49.8%;
+    width: 4.2rem;
+    height: 1.8rem;
+    transform: rotateZ(-18deg) skew(15deg, 18deg) translateX(-50%);
+    background: #f27317;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1rem; }
+  #pumpkin > div .stem {
+    position: absolute;
+    z-index: 30;
+    top: -4.4rem;
+    left: 45%;
+    width: 3.7rem;
+    height: 5.8rem;
+    transform: rotateZ(-19deg) skew(15deg, 18deg) translateX(-50%);
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    border-left: 0.9rem solid #4bd629;
+    border-right: 0.5rem solid #4bd629;
+    background: #88E471; }
 
 /*# sourceMappingURL=style.css.map */

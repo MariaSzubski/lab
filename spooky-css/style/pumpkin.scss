@@ -1,0 +1,197 @@
+$border-left: 1.2rem solid darken($orange, 9%);
+$border-right: 0.5rem solid darken($orange, 9%);
+
+#pumpkin > div {
+  width: auto;
+  margin: 5px auto;
+  position: relative;
+
+  animation: floaty 2s infinite;
+  animation-timing-function: ease-in-out;
+
+  .body {
+    position: relative;
+    margin: auto;
+    width: 30rem;
+    height: 21.5rem;
+
+    border-left: $border-left;
+    border-right: $border-right;
+    background-color: $orange;
+
+    border-top-right-radius: 8.5rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 11.5rem;
+    border-bottom-left-radius: 11.5rem;
+
+    .ridges {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+
+      width: 24rem;
+      height: 100%;
+
+      border-left: $border-left;
+      border-right: $border-right;
+      background-color: $orange;
+
+      border-top-right-radius: 75%;
+      border-top-left-radius: 75%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+    }
+
+    .ridges:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 21;
+
+      width: 13rem;
+      height: 100%;
+
+      border-left: $border-left;
+      border-right: $border-right;
+
+      border-top-right-radius: 80%;
+      border-top-left-radius: 80%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+    }
+  }
+
+  .eyes {
+    position: relative;
+    z-index: 22;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem auto;
+    padding: 5.4rem 0rem 0rem;
+    width: 16rem;
+    height: 8.8rem;
+    transform: rotateZ(-2deg);
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 2rem;
+      height: 2.8rem;
+      border-radius: 20%;
+
+      border-bottom: 2.8rem solid darken($orange, 50%);
+      border-left: 2.3rem solid transparent;
+      border-right: 2.3rem solid transparent;
+
+      animation: flickerbr 16s infinite;
+      animation-timing-function: ease-in;
+      animation-delay: 1s;
+    }
+  }
+
+  .nose {
+    position: relative;
+    z-index: 23;
+
+    width: 1.6rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    margin: auto;
+    transform: rotateZ(-5deg);
+
+    border-bottom: 2.2rem solid darken($orange, 50%);
+    border-left: 1.4rem solid transparent;
+    border-right: 1.4rem solid transparent;
+
+    animation: flickerbr 16s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+  }
+
+  .mouth {
+    position: relative;
+    z-index: 23;
+
+    background-color: darken($orange, 50%);
+    margin: 2.3rem auto 0rem;
+    width: 13.5rem;
+    height: 4.4rem;
+
+    border-bottom-left-radius: 13.5rem;
+    border-bottom-right-radius: 13.5rem;
+    transform: rotate(3deg);
+
+    animation: flickerbg 16s infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+
+    &:before {
+      position: relative;
+      left: 1.6rem;
+      top: -0.1rem;
+      content: "";
+      display: block;
+      width: 1.8rem;
+      height: 1.4rem;
+      background: $orange;
+      margin-left: 1rem;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+
+      position: relative;
+      right: -7.5rem;
+      bottom: -1.8rem;
+      width: 2rem;
+      height: 1.4rem;
+      margin-left: 1rem;
+
+      border-top-left-radius: 0.2rem;
+      border-top-right-radius: 0.2rem;
+      background: $orange;
+    }
+  }
+
+  .stem-shadow {
+    position: absolute;
+    z-index: 29;
+    top: -0.17rem;
+    left: 49.8%;
+    width: 4.2rem;
+    height: 1.8rem;
+
+    transform: rotateZ(-18deg) skew(15deg, 18deg) translateX(-50%);
+    background: darken($orange, 12%);
+
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .stem {
+    position: absolute;
+    z-index: 30;
+    top: -4.4rem;
+    left: 45%;
+    width: 3.7rem;
+    height: 5.8rem;
+    transform: rotateZ(-19deg) skew(15deg, 18deg) translateX(-50%);
+
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 8.5rem;
+    border-bottom-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+
+    border-left: 0.9rem solid darken($green, 17%);
+    border-right: 0.5rem solid darken($green, 17%);
+    background: $green;
+  }
+}
